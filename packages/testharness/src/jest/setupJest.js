@@ -1,0 +1,2 @@
+import './setupImageSnapshot';
+import './setupRunHTMLTest';

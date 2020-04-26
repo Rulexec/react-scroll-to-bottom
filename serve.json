@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/testharness.js",
+      "destination": "packages/testharness/dist/testharness.js"
+    },
+    {
+      "source": "/assets/:filename",
+      "destination": "__tests__/assets/:filename"
+    },
+    {
+      "source": "/:page",
+      "destination": "__tests__/:page.html"
+    }
+  ]
+}
