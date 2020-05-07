@@ -3,5 +3,13 @@ body, html, #root, #root > * {
 }
 
 body {
+  background-color: #F7F7F7;
   margin: 0;
+}
+
+#root {
+  background-color: White;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+  margin: auto;
+  width: 480px;
 }
