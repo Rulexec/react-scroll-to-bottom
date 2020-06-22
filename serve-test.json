@@ -1,0 +1,39 @@
+{
+  "headers": [
+    {
+      "source": "*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache no-store no-transform"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/assets/:filename",
+      "destination": "__tests__/assets/:filename"
+    },
+    {
+      "source": "/__dist__/testharness.js",
+      "destination": "packages/testharness/dist/testharness.js"
+    },
+    {
+      "source": "/__dist__/react-scroll-to-bottom.js",
+      "destination": "packages/bundle/dist/react-scroll-to-bottom.js"
+    },
+    {
+      "source": "/:page.css",
+      "destination": "__tests__/:page.css"
+    },
+    {
+      "source": "/:page",
+      "destination": "__tests__/:page.html"
+    },
+    {
+      "source": "/",
+      "destination": "__tests__/"
+    }
+  ]
+}

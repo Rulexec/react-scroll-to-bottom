@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  # On Windows, run with COMPOSE_CONVERT_WINDOWS_PATHS=1
+
+  chrome:
+    build:
+      context: ./
+      dockerfile: Dockerfile-selenium
+    depends_on:
+    - selenium-hub
+    - web
+    environment:
+    - HUB_HOST=selenium-hub
+    - HUB_PORT=4444
+    shm_size: '2gb'
+
+  selenium-hub:
+    image: selenium/hub:3.141.59-zirconium
+    container_name: selenium-hub
+    environment:
+    - GRID_BROWSER_TIMEOUT=60
+    - GRID_TIMEOUT=60
+    ports:
+    - "4444:4444"
+
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+    - "5080:80"

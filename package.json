@@ -8,9 +8,12 @@
     "build": "lerna run build --stream",
     "eslint": "lerna run eslint --parallel",
     "start": "lerna run start --parallel --scope=react-scroll-to-bottom --stream",
+    "start:docker": "docker-compose up --build --detach --scale chrome=4",
+    "stop:docker": "docker-compose down",
     "test": "lerna run test --stream"
   },
   "devDependencies": {
+    "jest": "^26.0.1",
     "lerna": "^3.20.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
