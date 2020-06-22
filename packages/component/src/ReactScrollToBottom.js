@@ -11,7 +11,7 @@ const ROOT_CSS = css({
   position: 'relative'
 });
 
-const BasicScrollToBottom = ({
+const ReactScrollToBottom = ({
   checkInterval,
   children,
   className,
@@ -28,7 +28,7 @@ const BasicScrollToBottom = ({
   </Composer>
 );
 
-BasicScrollToBottom.defaultProps = {
+ReactScrollToBottom.defaultProps = {
   checkInterval: undefined,
   children: undefined,
   className: undefined,
@@ -38,7 +38,7 @@ BasicScrollToBottom.defaultProps = {
   scrollViewClassName: undefined
 };
 
-BasicScrollToBottom.propTypes = {
+ReactScrollToBottom.propTypes = {
   checkInterval: PropTypes.number,
   children: PropTypes.any,
   className: PropTypes.string,
@@ -48,4 +48,4 @@ BasicScrollToBottom.propTypes = {
   scrollViewClassName: PropTypes.string
 };
 
-export default BasicScrollToBottom;
+export default ReactScrollToBottom;

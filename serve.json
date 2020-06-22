@@ -1,0 +1,19 @@
+{
+  "cleanUrls": false,
+  "redirects": [
+  ],
+  "rewrites": [
+    {
+      "source": "/react-scroll-to-bottom.development.js",
+      "destination": "/packages/component/dist/react-scroll-to-bottom.development.js"
+    },
+    {
+      "source": "/:page",
+      "destination": "/samples/:page.html"
+    },
+    {
+      "source": "/",
+      "destination": "/samples"
+    }
+  ]
+}
