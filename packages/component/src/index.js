@@ -22,6 +22,8 @@ import useScrollToStart from './hooks/useScrollToStart';
 import useScrollToTop from './hooks/useScrollToTop';
 import useSticky from './hooks/useSticky';
 
+// Don't forget to update index.umd.js for every exports changed in this file.
+
 export default ReactScrollToBottom;
 
 export {
